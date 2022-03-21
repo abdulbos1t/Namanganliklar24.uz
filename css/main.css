@@ -68,7 +68,9 @@ img {
     padding: 13px 30px;
     cursor: pointer;
 }
-
+.orange-btn:hover{
+    background-color: #f78d3bc9; 
+}
 
 /* SITE HEADER STYLES */
 .site-header {      
