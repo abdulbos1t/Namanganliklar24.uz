@@ -2,7 +2,8 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -22,8 +23,13 @@ body {
     line-height: 22px;
     background-color: #fff;
     color: #4a4b4c;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 img {
     max-width: 100%;
@@ -51,6 +57,8 @@ img {
     display: inline-block;
     cursor: pointer;
     border: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 .primary-btn:hover{
@@ -85,13 +93,19 @@ img {
     margin-bottom: 10px;
 }
 .site-header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .site-header-top-logo {
     border-radius: 7px;
     background-color: #fff;
     padding: 9px 6px 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 35px;
 }
@@ -99,8 +113,12 @@ img {
     display: block;
 }
 .currency-rates {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style: none;
     line-height: 19px;
     margin-right: auto;
@@ -135,6 +153,8 @@ img {
     border-radius: 39px;
     background-color: #dce6ff;
     padding: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 25px;
 }
@@ -165,9 +185,14 @@ img {
     margin-bottom: 40px;
 }
 .site-header-bottom-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
 }
 .site-header-bottom-list-item {
@@ -183,12 +208,16 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+    -webkit-transition: all 0.1s ease ;
+    -o-transition: all 0.1s ease ;
     transition: all 0.1s ease ;
 }
 .site-header-bottom-list-item a:hover{
     color: #577fdd;
 }
 .site-header-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .site-header-banner-img {
@@ -196,7 +225,9 @@ img {
     border-radius: 8px;
 }
 .site-header-banner-img:hover{
-    transform: scale(1.001, 1.001);
+    -webkit-transform: scale(1.001, 1.001);
+        -ms-transform: scale(1.001, 1.001);
+            transform: scale(1.001, 1.001);
 }
 
 /* MAIN SECTION STYLES */
@@ -206,8 +237,11 @@ img {
 
 /* NEWS CARDS SECTION STYLES */
 .news-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     margin-left: -10px;
 }
@@ -218,8 +252,13 @@ img {
     padding: 20px 17px 15px;
     margin-left: 10px;
     margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .news-cards-item-title {
     margin-bottom: 10px;
@@ -243,21 +282,29 @@ img {
 .news-cards-item-img {
     width: 359px;
     height: 165px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: auto;
     margin-bottom: 15px;
 }
 .news-cards-item-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .news-cards-item-footer-img {
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     border-radius: 5px;
 }
 .news-cards-item-footer-text,
@@ -280,9 +327,15 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
@@ -298,6 +351,8 @@ img {
 
 /* GLOBAL NEWS STYLES */
 .global-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 48px;
     position: relative;
@@ -322,6 +377,8 @@ img {
     margin-bottom: 17px;
 }
 .global-news-main-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 20px 20px 20px 17px;
     border-radius: 5px;
@@ -333,7 +390,8 @@ img {
 .global-news-main-item-img {
     width: 210px;
     height: 165px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
     margin-right: 15px;
 }
@@ -351,8 +409,12 @@ img {
     margin-bottom: 17px;
 }
 .global-news-main-item-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .global-news-main-item-footer-img {
     width: 20px;
@@ -416,6 +478,8 @@ img {
     line-height: 24px;
     color: #000;
     margin-bottom: 8px;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
     transition: all 0.1s;
     text-decoration: none;
 }
@@ -425,8 +489,12 @@ img {
 
 }
 .global-news-aside-item-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .global-news-aside-item-footer-text,
 .global-news-aside-item-footer-time {
@@ -438,6 +506,8 @@ img {
     margin-left: 4px;
 }
 .global-news-aside-reklama {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .global-news-aside-reklama-img {
@@ -445,7 +515,8 @@ img {
     height: 338px;
     display: block;
     border-radius: 15px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 /* SITE FOOTER */
 .site-footer{
@@ -463,21 +534,30 @@ img {
 }
 
 .site-footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
 }
 .site-footer-logo-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-decoration: none;
 }
 .site-footer-logo-img {
     width: 264px;
     height: 28px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 .site-footer-main{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    justify-content: space-between;
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;
     padding-bottom: 10px;
 }
 .site-footer-main-text{
@@ -500,6 +580,8 @@ img {
     font-size: 16px;
     line-height: 18.96px;
     color: #FFFFFF;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -513,8 +595,12 @@ img {
     margin-bottom: 30px;
 }
 .site-footer-social-media{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .site-footer-social-media-title{
     font-size: 18px;
@@ -523,20 +609,27 @@ img {
     line-height: 23px;
 }
 .site-footer-social-media-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style: none;
 }
 .site-footer-social-media-list-item:not(:last-child){
     margin-right: 25px;
 }
 .site-footer-social-media-item-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .site-footer-social-media-item-img {
     width: 25px;
     height: 25px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 
@@ -547,7 +640,8 @@ img {
     height: 553px;
     display: block;
     border-radius: 15px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 
@@ -555,6 +649,8 @@ img {
 /*  TESLA NEWS PAGE */
 /*TESLA GLOBAL NEWS STYLES */
 .tesla-global-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     padding-top: 10px;
@@ -565,8 +661,12 @@ img {
     margin-right: 10px;
 }
 .tesla-news-top{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 30px;
 }
 .tesla-news-top-img{
@@ -615,6 +715,8 @@ img {
 }
 .tesla-news-cards-list{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: -10px;
     margin-bottom: 100px;
@@ -624,8 +726,13 @@ img {
     width: 393px;
     padding: 20px 31px 18px 17px;
     margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .tesla-news-cards-item-title{
     font-size: 20px;
@@ -634,6 +741,8 @@ img {
     color: #000000;
     text-decoration: none;
     margin-bottom: 10px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
 .tesla-news-cards-item-title:hover{
@@ -648,14 +757,19 @@ img {
     margin-bottom: 23px;
 }
 .tesla-news-cards-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .tesla-news-cards-footer-img{
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     border-radius: 5px;
 }
 .tesla-news-cards-footer-text,
@@ -675,6 +789,8 @@ img {
     padding-top: 48px;
     padding-bottom: 100px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .contact-title {
@@ -690,15 +806,28 @@ img {
     width: 100%;
     max-width: 696px;
     margin-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 .contact-form-input-wrapper {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .contact-form-input {
     width: 100%;
