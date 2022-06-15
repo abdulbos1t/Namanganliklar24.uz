@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- STYLES CSS -->
-    <!-- <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css"> -->
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="./css/main.css"> 
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -202,7 +202,7 @@
             <div class="notificaion">
                 <h2 class="notification-title">Хотите быть в курсе свежих новостей?<br>Включите уведомления!
                 </h2>
-                <button class="notification-btn orange-btn">Включит</button>
+                <button class="notification-btn orange-btn" id="show-btn">Включит</button>
             </div>
             <!-- NOTIFICATION END -->
 
@@ -392,6 +392,36 @@
     </footer>
     <!-- SITE FOOTER END -->
 
+
+<!-- NOTIFICATION ALERT -->
+            <div class="modal hidden" id="modal">
+                <h2 class="modal-text">Хотите быть в курсе свежих новостей?  Включите уведомления!
+                </h2>
+                <button class="notification-btn modal-btn  orange-btn">Включит </button>
+                <button class="close-btn exit-btn" id="close-btn"><img src="./images/close.svg" alt=""></button>
+               </div>
+    
+           <div class="ovarly hidden" id="ovarly"></div>
+
+    <script>
+        const showBtn = document.querySelector('#show-btn')
+        const modal = document.querySelector('#modal')
+        const closes = document.getElementById('close-btn')
+        const overly = document.getElementById('ovarly')
+
+            showBtn.addEventListener('click', () => {
+                modal.classList.remove('hidden')
+                overly.classList.remove('hidden')
+            })
+            closes.addEventListener('click', () => {
+                modal.classList.add('hidden')
+                overly.classList.add('hidden')
+            })
+            overly.addEventListener('click', () => {
+                modal.classList.add('hidden')
+                overly.classList.add('hidden')
+            })
+    </script>
 </body>
 
 </html>
